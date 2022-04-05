@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="henu_exam:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/henu_exam_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="henu_exam/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="henu_exam" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
