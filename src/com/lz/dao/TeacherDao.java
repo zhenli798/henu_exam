@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TeacherDao {
-	//增加教师
+	// 增加教师
 	public void add(Teacher t) throws SQLException{
 		QueryRunner queryRunner = new QueryRunner(PropertiesUtils.getDataSource());
 		String sql = "insert into teacher(t_id,t_pwd,t_name,t_isadmin) values(?,?,?,?)";
@@ -21,21 +21,21 @@ public class TeacherDao {
 		queryRunner.update(sql, params);
 		
 	}
-	//删除教师
+	// 删除教师
 	public void delete(String id) throws SQLException {
 		QueryRunner queryRunner = new QueryRunner(PropertiesUtils.getDataSource());
 		String sql = "delete from teacher where t_id = ?";
 		//System.out.print("Teacherdao:"+id);
 		queryRunner.update(sql, id);
 	}
-	//更新教师信息
+	// 更新教师信息
 	public void update(Teacher t) throws SQLException {//根据t_id, 更新密码之外的信息
 		QueryRunner queryRunner = new QueryRunner(PropertiesUtils.getDataSource());
 		String sql = "update teacher set t_name = ?,t_isadmin = ? where t_id = ?";
 		Object[] params = {t.getT_name(),t.getT_isadmin(),t.getT_id()};
 		queryRunner.update(sql, params);
 	}
-	//重置教师密码
+	// 重置教师密码
 	public void resetPwd(Teacher t) throws SQLException { //根据t_id,更新密码
 		QueryRunner queryRunner = new QueryRunner(PropertiesUtils.getDataSource());
 		String sql = "update teacher set t_pwd = ? where t_id = ?";
@@ -44,7 +44,7 @@ public class TeacherDao {
 		queryRunner.update(sql, params);
 	}
 	
-	//根据教师id查找教师信息
+	// 根据教师id查找教师信息
 	public Teacher findById(String id) throws SQLException {
 		QueryRunner queryRunner = new QueryRunner(PropertiesUtils.getDataSource());
 		String sql = "select * from teacher where t_id = ?";
@@ -58,8 +58,9 @@ public class TeacherDao {
 		Teacher teacher = queryRunner.query(sql,new BeanHandler<>(Teacher.class),t_id,t_pwd);
 		return teacher;
 	}
-	//查找所有教师信息
+	// 查找所有教师信息
 	public PageInfo<Teacher> list(Teacher teacher, PageInfo<Teacher> pageInfo) throws SQLException {
+
 		QueryRunner queryRunner = new QueryRunner(PropertiesUtils.getDataSource());
 		String _sql = "";
 		List<Object> _list = new ArrayList<Object>();
