@@ -1,19 +1,22 @@
 package com.lz.dao;
 
-import com.lz.entity.Student;
-import com.lz.utils.PageInfo;
-import com.lz.utils.PropertiesUtils;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
+import com.lz.entity.Exam;
+import com.lz.entity.Student;
+import com.lz.entity.Teacher;
+import com.lz.utils.PageInfo;
+import com.lz.utils.PropertiesUtils;
 
 public class StudentDao {
-	//手动添加学生
+	// 手动添加学生
 	public void add(Student s) throws SQLException{
 		QueryRunner queryRunner = new QueryRunner(PropertiesUtils.getDataSource());
 		String sql = "insert into student(e_id,s_id,s_name,s_class) values(?,?,?,?)";
