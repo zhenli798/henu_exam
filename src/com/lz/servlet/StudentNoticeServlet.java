@@ -20,8 +20,9 @@ import com.lz.dao.DaoFactory;
 import com.lz.entity.Exam;
 import com.lz.entity.Notice;
 
+import com.lz.utils.DbUtil;
 import net.sf.json.JSONArray;
-import utils.DbUtil;
+
 
 
 @WebServlet("/StudentNoticeServlet")

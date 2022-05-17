@@ -18,7 +18,7 @@ body{
 	left: 0px;
 	bottom: 0px;
 	top:0px;
-	background-color: #467FE6;
+	background-color: #000000;
 	border-right: 1px solid #e1e1e1;
 	
 }
@@ -40,18 +40,18 @@ body{
 .menux p{
 	height: 40px;
 	line-height: 40px;
-	background-color: #467FE6;
+	background-color: #000000;
 	color:#F8F8F8;
 	border-bottom: 1px solid #e1e1e1;
 	text-align: center;
 }
 .menux p:hover{
 	background-color: #F8F8F8;
-	color: #467FE6;
+	color: #000000;
 	cursor: pointer;
 }
 .menux p:hover i{
-	color: #467FE6;
+	color: #000000;
 }
 .menux p i{
 	color: #FFFFFF;
@@ -73,12 +73,12 @@ body{
 	box-sizing: border-box;
 }
 .menux ul li i{
-	color: #467FE6;
+	color: #000000;
 }
 
 .menux ul li:hover{
 	background-color: #f2f7ff;
-	color: #467FE6;
+	color: #000000;
 }
 
 .menux ul li a{
@@ -88,7 +88,7 @@ body{
 	text-decoration: none;
 }
 .menux ul li a:hover{
-	color: #467FE6;
+	color: #000000;
 }
 .right{
 	float: right;
@@ -181,7 +181,7 @@ body{
 	 border-radius: 4px;
 }
 .condition button{
-	background-color: #467FE6;
+	background-color: #000000;
 	color: #FFFFFF;
 	padding: 6px 10px;
 	font-size: 12px;
@@ -251,7 +251,7 @@ body{
 }
 .page button{
 	margin:0 5px;
-	background-color: #467FE6;
+	background-color: #000000;
 	color: #FFFFFF;
 	padding: 3px 5px;
 	font-size: 12px;
@@ -293,7 +293,7 @@ body{
 }
 .tableadd td button{
 	margin-right: 10px;
-	background-color: #467FE6;
+	background-color: #000000;
 	color: #FFFFFF;
 	padding: 6px 10px;
 	font-size: 12px;

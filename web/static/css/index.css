@@ -9,7 +9,7 @@ body{
 }
 .header{
 	height: 70px;
-	background-color: #467FE6;
+	background-color: #000000;
 }
 .header .logo{
 	background: url(../img/logo2.png) no-repeat;
@@ -101,7 +101,7 @@ body{
 	text-align: center;
 }
 .menux p:hover{
-	background-color: #467FE6;
+	background-color: #000000;
 	color: #FFFFFF;
 	cursor: pointer;
 }
@@ -109,7 +109,7 @@ body{
 	color: #FFFFFF;
 }
 .menux p i{
-	color: #467FE6;
+	color: #000000;
 }
 .menux p .point{
 	float: right;
@@ -129,12 +129,12 @@ body{
 	box-sizing: border-box;
 }
 .menux ul li i{
-	color: #467FE6;
+	color: #000000;
 }
 
 .menux ul li:hover{
 	background-color: #f2f7ff;
-	color: #467FE6;
+	color: #000000;
 }
 
 .menux ul li a{
@@ -144,7 +144,7 @@ body{
 	text-decoration: none;
 }
 .menux ul li a:hover{
-	color: #467FE6;
+	color: #000000;
 }
 
 .main{
@@ -182,7 +182,7 @@ body{
 	 border-radius: 4px;
 }
 .condition button{
-	background-color: #467FE6;
+	background-color: #000000;
 	color: #FFFFFF;
 	padding: 6px 10px;
 	font-size: 12px;
@@ -252,7 +252,7 @@ body{
 }
 .page button{
 	margin:0 5px;
-	background-color: #467FE6;
+	background-color: #000000;
 	color: #FFFFFF;
 	padding: 3px 5px;
 	font-size: 12px;
@@ -294,7 +294,7 @@ body{
 }
 .tableadd td button{
 	margin-right: 10px;
-	background-color: #467FE6;
+	background-color: #000000;
 	color: #FFFFFF;
 	padding: 6px 10px;
 	font-size: 12px;
