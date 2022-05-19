@@ -6,8 +6,8 @@ public class DbUtil {
 
 	private static final String URL="jdbc:mysql://localhost:3306/exam?serverTimezone=UTC";//杩欓噷鏄垜鏁版嵁搴撶殑鍚嶅瓧
 
-	private static final String USER="root";
-	private static final String PASSWORD="549436";//杩欓噷鏄垜鏁版嵁搴撶殑瀵嗙爜
+	private static final String USER="exam";
+	private static final String PASSWORD="549436xiaomo";//杩欓噷鏄垜鏁版嵁搴撶殑瀵嗙爜
 	//澹版槑JDBC鐨勭浉鍏冲璞�
 	protected static Statement s = null;
 	protected static ResultSet rs = null;

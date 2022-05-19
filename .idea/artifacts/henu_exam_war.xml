@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="henu_exam:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/henu_exam_war</output-path>
+    <root id="archive" name="henu_exam_war.war">
+      <element id="artifact" artifact-name="henu_exam:war exploded" />
+    </root>
+  </artifact>
+</component>
