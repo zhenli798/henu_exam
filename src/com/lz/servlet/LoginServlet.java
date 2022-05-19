@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.SQLException;
 
 @WebServlet(name="login",urlPatterns={"/login"})
@@ -42,28 +43,40 @@ public class LoginServlet extends HttpServlet {
 				Student student = DaoFactory.getInstance().getStudentDao().login(uname, pwd);
 				if(student != null) {//登录成功
 					session.setAttribute("user", student);
-					resp.sendRedirect("page/Student/index.jsp");
+					// resp.sendRedirect("page/Student/index.jsp");
+					resp.setContentType("text/html;charset=utf-8");
+					PrintWriter out = resp.getWriter();
+					out.print("page/Student/index.jsp");
 				}else {//登录失败
-					req.setAttribute("error0", "用户名或密码错误");
-					req.getRequestDispatcher("login.jsp").forward(req, resp);
+					resp.setContentType("text/html;charset=utf-8");
+					PrintWriter out = resp.getWriter();
+					out.print("工号和姓名不匹配");
 				}
 			} else if ("2".equals(type)){// 管理员
 				Teacher teacher = DaoFactory.getInstance().getTeacherDao().login(uname, MD5.getMD5(pwd));
 				if(teacher != null && teacher.getT_isadmin()==1) {//查询到该用户
 					session.setAttribute("user", teacher);
-					resp.sendRedirect("page/Admin/index.jsp");
+					// resp.sendRedirect("page/Admin/index.jsp");
+					resp.setContentType("text/html;charset=utf-8");
+					PrintWriter out = resp.getWriter();
+					out.print("page/Admin/index.jsp");
 				}else {//登录失败
-					req.setAttribute("error2", "用户名或密码错误");
-					req.getRequestDispatcher("login.jsp").forward(req, resp);
+					resp.setContentType("text/html;charset=utf-8");
+					PrintWriter out = resp.getWriter();
+					out.print("用户名或密码错误");
 				}	
 			}else {//老师
 				Teacher teacher = DaoFactory.getInstance().getTeacherDao().login(uname, MD5.getMD5(pwd));
 				if(teacher != null) {//查询到该用户
 					session.setAttribute("user", teacher);
-					resp.sendRedirect("page/Teacher/index.jsp");
+					// resp.sendRedirect("page/Teacher/index.jsp");
+					resp.setContentType("text/html;charset=utf-8");
+					PrintWriter out = resp.getWriter();
+					out.print("page/Teacher/index.jsp");
 				}else {//登录失败
-					req.setAttribute("error1", "用户名或密码错误");
-					req.getRequestDispatcher("login.jsp").forward(req, resp);
+					resp.setContentType("text/html;charset=utf-8");
+					PrintWriter out = resp.getWriter();
+					out.print("用户名或密码错误");
 				}	
 			}
 		} catch (SQLException e) {

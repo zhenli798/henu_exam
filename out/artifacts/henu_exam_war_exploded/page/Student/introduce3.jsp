@@ -12,7 +12,7 @@
 			width:20%; 
 			height:350px;
 			margin:10px;
-			background:#E6E6FA;
+			background: #ee7979;
 			float: left;
         }
    </style>
