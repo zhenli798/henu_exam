@@ -33,7 +33,7 @@ public class ScoreDao {
 	
 	public List<Map<String, Object>> query_jgl() throws SQLException {
 		QueryRunner queryRunner = new QueryRunner(PropertiesUtils.getDataSource());
-		String sql = "select A.e_id,( select e_name from exam where A.e_id=exam.e_id)e_name,jgnum,allnum,round(jgnum/allnum,2)*100 jgl from( "
+		String sql = "select a.e_id,( select e_name from exam where a.e_id=exam.e_id)e_name,jgnum,allnum,round(jgnum/allnum,2)*100 jgl from( "
 				+ "select e_id,count(*)jgnum from student where s_score>60 group by e_id "
 				+ ")a,( "
 				+ "select e_id,count(*)allnum from student group by e_id) "
@@ -65,12 +65,12 @@ public class ScoreDao {
 	public List<Map<String, Object>> query_jglByTid(String t_id) throws SQLException {
 		QueryRunner queryRunner = new QueryRunner(PropertiesUtils.getDataSource());
 		String sql = "select * from exam,(\r\n"
-				+ "select A.e_id,jgnum,allnum,round(jgnum/allnum,2)*100 jgl from(\r\n"
+				+ "select a.e_id,jgnum,allnum,round(jgnum/allnum,2)*100 jgl from(\r\n"
 				+ "select e_id,count(*)jgnum from student where s_score>=60 group by e_id\r\n"
 				+ ")a,(\r\n"
 				+ "select e_id,count(*)allnum from student group by e_id\r\n"
 				+ ")b where a.e_id = b.e_id\r\n"
-				+ ")c where exam.e_id = C.e_id\r\n"
+				+ ")c where exam.e_id = c.e_id\r\n"
 				+ "and t_id=?";
 		List<Map<String, Object>> list = queryRunner.query(sql, new MapListHandler(),t_id);
 		return list;
