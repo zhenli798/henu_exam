@@ -9,53 +9,43 @@
 			list-style: disc;
 	    }
         .css{
-			width:20%; 
+			width:80%;
 			height:350px;
 			margin:10px;
-			background: #ee7979;
+			background: #FFFFFF;
 			float: left;
+            border: 1px #1b1e21 solid;
         }
    </style>
 </head>
 <body>
     <ul class="css"  style="padding-right: 30px">
         <p></p>
-        <strong style="margin-left: 20px; font-size: 18px">我的考试</strong>
+        <strong style="font-size: 18px">我的考试</strong>
         <p>
-            <li>展示此学生参加的所有考试，以及分数</li>
+            <li>展示参加的考试，以及分数</li>
         </p>
         <p>
-            <li>学生可以下载老师上传的考卷，上传自己的作业</li >
+            <li>下载试卷、上传答案</li >
         </p>
         <p>
-            <li>实时展示每场考试的剩余时间</li>
+            <li>接收通知</li>
+        </p>
+        <p></p>
+        <strong style="font-size: 18px">我的成绩图</strong>
+        <p>
+        <li>考试的分数条形图</li>
+        </p>
+        <p>
+        <li>考试的分数折线图</li >
+        </p>
+        <p></p>
+        <strong style="font-size: 18px">我的云空间</strong>
+        <p>
+        <li>小仓库</li>
         </p>
     </ul >
-        <ul class="css" style="padding-right: 30px">
-        <p>
-            <strong style="margin-left: 20px; font-size: 18px">我的成绩图</strong>    
-        </p>
-        <p> 
-            <li>展示此学生参加的考试的分数条形图</li>
-        </p>
-        <p>
-            <li>展示此学生参加考试的分数折线图</li>
-        </p>
-    </ul>
-    <ul class="css" style="padding-right: 30px">
-        <p>
-            <strong style="margin-left: 20px; font-size: 18px">我的云空间</strong>
-        </p>
-        <p>
-            <li>学生可以上传留存自己的小文件</li>
-        </p>
-        <p>
-            <li>支持模糊查询，方便文件多时的查找</li >
-        </p>
-        <p>
-            <li>云文件随点即下，方便快捷</li >
-        </p>
-    </ul >
+
     
 
 </body>

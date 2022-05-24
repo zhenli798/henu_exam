@@ -56,7 +56,7 @@ public class AdminServlet extends HttpServlet {
 		try {
 			DaoFactory.getInstance().getTeacherDao().delete(t_id);
 			//直接重定向到列表页面
-			response.sendRedirect(PathUtils.getBasePath(request)+"admin?method=list&msg=Delete user sucessful!");
+			response.sendRedirect(PathUtils.getBasePath(request)+"admin?method=list&msg=delete user sucess!");
 		} catch (Exception e) {
 			e.printStackTrace();
 		} 
@@ -72,7 +72,7 @@ public class AdminServlet extends HttpServlet {
 		try {
 			DaoFactory.getInstance().getTeacherDao().resetPwd(teacher);
 			//直接重定向到列表页面
-			response.sendRedirect(PathUtils.getBasePath(request)+"admin?method=list&msg=Reset password sucessful!");
+			response.sendRedirect(PathUtils.getBasePath(request)+"admin?method=list&msg=reset password sucess!");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -99,7 +99,7 @@ public class AdminServlet extends HttpServlet {
 			try {
 				DaoFactory.getInstance().getTeacherDao().resetPwd(teacher);
 				//直接重定向到列表页面
-				response.sendRedirect("page/Admin/pwd.jsp?msg=Update password sucessful!");
+				response.sendRedirect("page/Admin/pwd.jsp?msg=update password sucess!");
 			} catch (Exception e) {
 				e.printStackTrace();
 				}
@@ -121,7 +121,7 @@ public class AdminServlet extends HttpServlet {
 		try {
 			DaoFactory.getInstance().getTeacherDao().update(teacher);
 			//直接重定向到列表页面
-			response.sendRedirect(PathUtils.getBasePath(request)+"admin?method=list&msg=Update sucessful!");
+			response.sendRedirect(PathUtils.getBasePath(request)+"admin?method=list&msg=update sucess!");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -143,7 +143,7 @@ public class AdminServlet extends HttpServlet {
 			DaoFactory.getInstance().getTeacherDao().add(teacher);
 			//直接重定向到列表页面
 			System.out.println(PathUtils.getBasePath(request)+"admin?method=list");
-			response.sendRedirect(PathUtils.getBasePath(request)+"admin?method=list&msg=Add user sucessful!");
+			response.sendRedirect(PathUtils.getBasePath(request)+"admin?method=list&msg=add user sucess!");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -208,12 +208,12 @@ public class AdminServlet extends HttpServlet {
 		global.setTeacher_can_clean(teacher_can_clean);
 		
 		try {
-			System.out.println("updatGlobal");
+			System.out.println("更改系统配置");
 			HttpSession  session = request.getSession();
 			session.setAttribute("global",global);
 			DaoFactory.getInstance().getGlobalDao().update(global);
-			System.out.println("updateGlobal sucessful");
-			response.sendRedirect(PathUtils.getBasePath(request)+"page/Admin/showGlobal.jsp?msg=Update global sucessful!");
+			System.out.println("更改系统配置成功!");
+			response.sendRedirect(PathUtils.getBasePath(request)+"page/Admin/showGlobal.jsp?msg=update settings success!");
 		} catch (Exception e) {
 		}
 	}

@@ -3,8 +3,8 @@
 <html lang="cn">
 <head>
 <title>上机考试</title>
-	<link rel="shortcut icon" href="./login/1.ico" />
-	<link rel="bookmark" href="./login/1.ico" />
+	<link rel="shortcut icon" href="${basePath}img/logo.png" />
+	<link rel="bookmark" href="${basePath}img/logo.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="./noprivilige/css/style.css" rel="stylesheet" type="text/css" media="all" />

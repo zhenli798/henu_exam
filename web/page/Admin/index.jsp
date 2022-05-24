@@ -6,8 +6,8 @@
 <head>
 <meta charset="utf-8" />
 <title>上机考试系统首页</title>
-<link rel="shortcut icon" href="${basePath}static/img/1.ico" />
-<link rel="bookmark" href="${basePath}static/img/1.ico" />
+<link rel="shortcut icon" href="${basePath}img/logo.png" />
+<link rel="bookmark" href="${basePath}img/logo.png" />
 <link rel="stylesheet" href="${basePath}static/css/index.css" />
 <link rel="stylesheet"
 	href="${basePath}static/css/font-awesome-4.7.0/css/font-awesome.min.css" />
@@ -71,12 +71,8 @@
 					<li><a href="javascript:void(0);" url="${basePath}main" title="成绩报表">
 							<i class="fa fa-caret-right"></i> 成绩报表
 					</a></li>
-					<li><a href="javascript:void(0);" url="${basePath}page/Admin/showGlobal.jsp" title="全局变量">
-							<i class="fa fa-caret-right"></i> 全局变量
-					</a></li>
-				
-					<li><a href="javascript:void(0);" url="${basePath}page/Admin/about.jsp" title="系统监控">
-							<i class="fa fa-caret-right"></i> 系统监控
+					<li><a href="javascript:void(0);" url="${basePath}page/Admin/showGlobal.jsp" title="系统配置">
+							<i class="fa fa-caret-right"></i> 系统配置
 					</a></li>
 				</ul>
 		</div>
