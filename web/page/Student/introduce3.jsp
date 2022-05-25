@@ -10,7 +10,7 @@
 	    }
         .css{
 			width:80%;
-			height:350px;
+			height:auto;
 			margin:10px;
 			background: #FFFFFF;
 			float: left;
@@ -23,26 +23,26 @@
         <p></p>
         <strong style="font-size: 18px">我的考试</strong>
         <p>
-            <li>展示参加的考试，以及分数</li>
+            展示参加的考试，以及分数
         </p>
         <p>
-            <li>下载试卷、上传答案</li >
+            下载试卷、上传答案
         </p>
         <p>
-            <li>接收通知</li>
+            接收通知
         </p>
         <p></p>
         <strong style="font-size: 18px">我的成绩图</strong>
         <p>
-        <li>考试的分数条形图</li>
+        考试的分数条形图
         </p>
         <p>
-        <li>考试的分数折线图</li >
+        考试的分数折线图
         </p>
         <p></p>
         <strong style="font-size: 18px">我的云空间</strong>
         <p>
-        <li>小仓库</li>
+        小仓库
         </p>
     </ul >
 

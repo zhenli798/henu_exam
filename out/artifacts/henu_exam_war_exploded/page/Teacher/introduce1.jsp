@@ -9,54 +9,46 @@
 			list-style: disc;
 	    }
         .css{
-			width:20%; 
-			height:350px;
-			margin:10px;
-			background:#E6E6FA;
-			float: left;
+            width:80%;
+            height:auto;
+            margin:10px;
+            background: #FFFFFF;
+            float: left;
+            border: 1px #1b1e21 solid;
         }
    </style>
 </head>
 <body>
-    <ul class="css"  style="padding-right: 30px">
-        <p></p>
-        <strong style="margin-left: 20px; font-size: 18px">所有考试列表</strong>
-        <p>
-            <li>教师可以对考试进行增删改查操作（支持模糊查询）</li>
-        </p>
-        <p>
-            <li>老师上传试卷，设置考试试卷，导入学生名单xlsx文件</li >
-        </p>
-        <p>
-            <li>老师对考试添加通知，下载打包学生上传的试卷</li>
-        </p>
-          <p>
-            <li>老师给学生提交的考卷/作业进行评分</li>
-        </p>
-    </ul >
-    
-    <ul class="css" style="padding-right: 30px">
-        <p>
-            <strong style="margin-left: 20px; font-size: 18px">成绩统计</strong>
-        </p>
-        <p>
-            <li>此老师创建的考试的分数段人数统计</li>
-        </p>
-        <p>
-            <li>此老师创建的考试的及格率统计</li >
-        </p>
-    </ul >
-    
-    <ul class="css" style="padding-right: 30px">
-        <p>
-            <strong style="margin-left: 20px; font-size: 18px">其他功能</strong>    
-        </p>
-        <p> 
-            <li>支持一键切换管理员身份（如果该老师具有管理员资格）</li>
-        </p>
-        <p>
-            <li>修改自己的密码，查看自己的个人信息</li>
-        </p>
-    </ul>
+<ul class="css"  style="padding-right: 30px">
+    <p></p>
+    <strong style="font-size: 18px">所有考试列表</strong>
+    <p>
+    答卷打包下载
+    </p>
+    <p></p>
+    <strong style="font-size: 18px">单场管理考试</strong>
+    <p>
+    编辑考试
+    </p>
+    <p>
+    学生信息管理、通知管理
+    </p>
+    <p>
+    答卷下载、打分
+    </p>
+    <p></p>
+    <strong style="font-size: 18px">成绩统计</strong>
+    <p>
+    考试各分数段人数统计
+    </p>
+    <p>
+    考试及格率统计
+    </p>
+    <p></p>
+    <strong style="font-size: 18px">成绩报表</strong>
+    <p>
+    成绩统计图
+    </p>
+</ul >
 </body>
 </html>

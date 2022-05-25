@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="login-form">
-  <h1><b>考试管理系统</b></h1>
+  <h1><b>上机考试管理系统</b></h1>
   <div style="display: flex; flex-direction: row;">
     <p style="font-weight:bolder;">身份</p>
     <div style="display: flex; flex-direction: row;justify-content: space-between; width: 80%;margin-left: 5%;">
