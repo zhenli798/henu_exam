@@ -93,10 +93,6 @@ if(request.getParameter("msg")!=null){
 }
 %>
 </p>
-
-
-
-
 	<form name="form1" id="form1" method="post">
 		<div class="condition">
 			工号：<input type="text" name="t_id" size="8" value="${teacher.t_id}">

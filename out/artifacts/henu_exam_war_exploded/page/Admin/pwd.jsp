@@ -9,6 +9,7 @@
 	href="${basePath}static/css/font-awesome-4.7.0/css/font-awesome.min.css" />
 <script src="${basePath}static/js/jquery.min.js" type="text/javascript"></script>
 </head>
+
 <body style="height: 100%; margin: 0">
 	<div class="add">
 		<p style="color: green; text-align: center;">

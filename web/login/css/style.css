@@ -34,13 +34,7 @@ form button:hover{background-color:#0080ff;color: white;}
 	nav.vertical ul li{display:block;}/* vertical menu */
 	nav.horizontal ul li{display: inline-block;}/* horizontal menu */
 	img{max-width:100%;}
-/*-- //Reset-Code --*/
-/* body{
-	margin:0;
-	font-family: 'Roboto Condensed', sans-serif;
-	background: #003b64;
 
-} */
 body a{
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
