@@ -52,4 +52,4 @@
 * IDEA
 * Tomcat9
 * MySql5.7
-* JDK11
+* JDK14
